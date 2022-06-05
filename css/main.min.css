@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap);
+.main,
+footer,
+header {
+  width: 80%;
+  padding: 0 10%
+}
+.main .articles,
+.main .articles > div .bottom,
+footer .flex-blocks,
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+footer .flex-blocks > div .social {
+  margin-top: 20px
+}
+footer .flex-blocks > div .social i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #eee;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #454545;
+  cursor: pointer
+}
+footer .flex-blocks > div .social i:hover {
+  color: #626dfc
+}
+.main h2 {
+  color: #010101;
+  position: relative
+}
+.main h2::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background: #626dfc;
+  position: absolute;
+  bottom: 3px;
+  left: 0
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0
+}
+body,
+html {
+  height: 100%
+}
+body {
+  font-family: Poppins,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #fff;
+  color: #999
+}
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: color .6s ease;
+  -o-transition: color .6s ease;
+  transition: color .6s ease
+}
+a:hover {
+  color: #ccc
+}
+header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 50px
+}
+header .logo {
+  font-size: 48px;
+  font-weight: 200;
+  color: #454545
+}
+header ul {
+  list-style: none
+}
+header ul li {
+  display: inline-block;
+  margin-right: 25px
+}
+header ul li .active::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #626dfc;
+  display: inline-block;
+  position: relative;
+  top: 12px;
+  right: 50%
+}
+header ul li .fa-solid {
+  cursor: pointer;
+  color: #000;
+  -webkit-transition: color .6s ease;
+  -o-transition: color .6s ease;
+  transition: color .6s ease
+}
+header ul li .fa-solid:hover {
+  color: #ccc
+}
+.main {
+  margin-top: 50px
+}
+.main h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase
+}
+.main .intro-text {
+  margin-top: 30px;
+  font-weight: 300px
+}
+.main .articles > div {
+  width: 32%;
+  margin-top: 50px;
+  color: #000
+}
+.main .articles > div .img-holder {
+  width: 100%;
+  height: 300px;
+  background: #f7f7f7
+}
+.main .articles > div .img-holder.big-size {
+  height: 500px
+}
+.main .articles > div .img-holder.medium-size {
+  height: 400px
+}
+.main .articles > div .tag {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 40px
+}
+.main .articles > div h3 {
+  font-size: 24px;
+  margin-top: 5px;
+  font-weight: 700
+}
+.main .articles > div p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #999
+}
+.main .articles > div .bottom {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #999;
+  font-size: 14px;
+  width: 80%
+}
+.main .articles > div .bottom i {
+  margin-right: 5px
+}
+.main .load-more {
+  width: 190px;
+  height: 52px;
+  margin: 50px auto;
+  display: block;
+  border: 0;
+  border-radius: 3px;
+  background: #eee;
+  color: #010101;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: background .6s ease;
+  -o-transition: background .6s ease;
+  transition: background .6s ease;
+  cursor: pointer
+}
+.main .load-more:hover {
+  background: #bbb
+}
+footer {
+  margin-top: 60px;
+  border-top: 1px solid #f6f6f6;
+  padding-top: 50px
+}
+footer .flex-blocks > div {
+  width: 26%
+}
+footer .flex-blocks > div h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #010101
+}
+footer .flex-blocks > div .links {
+  list-style: none
+}
+footer .flex-blocks > div .links li {
+  display: block;
+  margin-top: 10px
+}
+footer .flex-blocks > div .links li a {
+  color: #999
+}
+footer .flex-blocks > div .links li a:hover {
+  color: #626dfc;
+  border-bottom: 1px solid #626dfc
+}
+footer .flex-blocks > div .email-link {
+  color: #626dfc;
+  border-bottom: 1px solid #626dfc
+}
+footer .flex-blocks > div .email-link:hover {
+  color: #333;
+  border-color: #333
+}
+.text-bottom {
+  text-align: center;
+  margin-top: 70px;
+  border-top: 1px solid #f6f6f6;
+  padding: 30px 0;
+  color: #000
+}
