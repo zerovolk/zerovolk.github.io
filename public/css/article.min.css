@@ -1,0 +1,219 @@
+.article {
+  width: 80%;
+  padding: 0 10%
+}
+.article .nav,
+.article .nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.article .share .social {
+  margin-top: 20px
+}
+.article .share .social i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #eee;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #454545;
+  cursor: pointer
+}
+.article .share .social i:hover {
+  color: #626dfc
+}
+.article .comment-form h3,
+.article .comments h3 {
+  color: #010101;
+  position: relative
+}
+.article .comment-form h3::before,
+.article .comments h3::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background: #626dfc;
+  position: absolute;
+  bottom: 3px;
+  left: 0
+}
+.main-img {
+  width: 100%;
+  height: 500px;
+  margin-top: 60px;
+  background: #f7f7f7
+}
+.article {
+  color: #bbb
+}
+.article .intro {
+  background: #fff;
+  padding: 40px 70px;
+  position: relative;
+  top: -100px;
+  height: 30px
+}
+.article .intro h1 {
+  font-size: 36px;
+  color: #000
+}
+.article .intro .avtor {
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 15px
+}
+.article .intro .avtor .img-avtor {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #eaf2f5;
+  margin-right: 8px;
+  float: left;
+  position: relative;
+  top: -5px
+}
+.article .intro .avtor b {
+  font-weight: 600;
+  margin-left: 3px
+}
+.article .intro .time {
+  display: inline-block
+}
+.article .intro .time i {
+  font-size: 23px;
+  margin-right: 5px;
+  position: relative;
+  top: 3px
+}
+.article .share {
+  margin-top: 30px
+}
+.article .share > div {
+  display: inline-block
+}
+.article .share > div:first-of-type {
+  margin-right: 7px
+}
+.article .nav {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px
+}
+.article .nav > div {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.article .nav > div.prev-post img {
+  margin-right: 10px
+}
+.article .nav > div.prev-post a {
+  color: #626dfc
+}
+.article .nav > div.prev-post a:hover {
+  color: #000
+}
+.article .nav > div.next-post img {
+  margin-left: 10px
+}
+.article .comments {
+  margin-top: 80px
+}
+.article .comments h3 {
+  font-size: 18px;
+  font-weight: 600
+}
+.article .comments h3::before {
+  bottom: -4px;
+  height: 2px
+}
+.article .comments .comment {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.article .comments .comment .img-holder {
+  padding: 32px;
+  border-radius: 50%;
+  background: #eaf2f5;
+  margin-right: 30px
+}
+.article .comments .comment .name {
+  font-weight: 600;
+  color: #000;
+  font-size: 18px;
+  margin-right: 20px
+}
+.article .comments .comment .time {
+  font-size: 14px
+}
+.article .comments .comment .time::after {
+  content: "|";
+  margin: 0 10px
+}
+.article .comments .comment .reply {
+  color: #626dfc
+}
+.article .comments .comment p {
+  margin-top: 10px
+}
+.article .comment-form {
+  margin-top: 50px;
+  margin-bottom: 150px
+}
+.article .comment-form h3 {
+  font-size: 18px;
+  font-weight: 600
+}
+.article .comment-form h3::before {
+  bottom: -4px;
+  height: 2px
+}
+.article .comment-form form {
+  margin-top: 40px
+}
+.article .comment-form form input,
+.article .comment-form form textarea {
+  border: 0;
+  background: #f7f7f7;
+  padding: 15px 2%;
+  width: 45%;
+  font-size: 16px;
+  margin-bottom: 20px
+}
+.article .comment-form form input:last-of-type {
+  margin-left: 1.5%
+}
+.article .comment-form form textarea {
+  width: 96%;
+  resize: none;
+  height: 200px
+}
+.article .comment-form form .post-comment {
+  border: 0;
+  float: right;
+  background: #626dfc;
+  width: 190px;
+  height: 52px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer
+}
+.article .comment-form form .post-comment:hover {
+  background: #333
+}
