@@ -1,0 +1,77 @@
+@media (min-width:768px) {
+  .about {
+    width: 80%;
+    padding: 0 10%
+  }
+}
+@media (max-width:767px) {
+  .about {
+    width: 96%;
+    padding: 0 2%
+  }
+}
+@media (min-width:626px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+}
+@media (max-width:625px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+}
+.about > div h1 {
+  color: #010101;
+  position: relative
+}
+.about > div h1::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #626dfc;
+  display: inline-block;
+  position: absolute;
+  bottom: 3px;
+  left: 0
+}
+.about > div {
+  margin-top: 100px
+}
+.about > div h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px
+}
+.about > div p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px
+}
+.about > div h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #454545;
+  text-transform: uppercase
+}
+.about > div ul {
+  list-style: none
+}
+.about > div ul li {
+  font-size: 16px;
+  font-weight: 300
+}
