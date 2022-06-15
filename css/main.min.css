@@ -117,7 +117,8 @@ a {
   color: #000;
   -webkit-transition: color .6s ease;
   -o-transition: color .6s ease;
-  transition: color .6s ease
+  transition: color .6s ease;
+  cursor: pointer
 }
 a:hover {
   color: #626dfc
@@ -279,18 +280,21 @@ footer .flex-blocks > div .social {
   margin-top: 30px
 }
 footer .flex-blocks > div .links {
-  list-style: none;
   margin-top: 30px
 }
-footer .flex-blocks > div .links li {
+footer .flex-blocks > div .links .links__item {
   display: block;
   margin-top: 10px
 }
-footer .flex-blocks > div .links li a {
-  color: #999;
-  font-weight: 300
+footer .flex-blocks > div .links .links__item .links__text {
+  display: none
 }
-footer .flex-blocks > div .links li a:hover {
+footer .flex-blocks > div .links .links__item .links__title {
+  color: #999;
+  font-weight: 300;
+  cursor: pointer
+}
+footer .flex-blocks > div .links .links__item .links__title:hover {
   color: #626dfc;
   border-bottom: 1px solid #626dfc
 }
