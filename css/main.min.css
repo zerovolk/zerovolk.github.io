@@ -129,22 +129,97 @@ header {
   align-items: center;
   padding-top: 50px
 }
+@media (max-width:471px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    padding-top: 0
+  }
+}
 header .logo {
   font-size: 48px;
   font-weight: 200;
   color: #454545;
   text-transform: uppercase;
-  cursor: pointer
+  cursor: pointer;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row
 }
-header ul {
+@media (min-width:472px) {
+  header #hidden-menu {
+    display: none
+  }
+  header #show-menu {
+    display: none
+  }
+}
+@media (max-width:471px) {
+  header .nav {
+    display: none
+  }
+  header #show-menu {
+    font-size: 34px;
+    color: #000;
+    -webkit-transition: color .6s ease;
+    -o-transition: color .6s ease;
+    transition: color .6s ease
+  }
+  header #show-menu:hover {
+    color: #626dfc
+  }
+}
+@media (max-width:471px) {
+  .fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid silver;
+    background: #fff
+  }
+}
+#hidden-menu {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  height: 100vh;
+  z-index: 10;
+  background: #fff;
+  text-align: center
+}
+#hidden-menu .close {
+  font-size: 40px;
+  float: right;
+  margin-right: 20px;
+  font-weight: 700;
+  -webkit-transition: color .6s ease;
+  -o-transition: color .6s ease;
+  transition: color .6s ease;
+  cursor: pointer;
+  color: #010101
+}
+#hidden-menu .close:hover {
+  color: #626dfc
+}
+#hidden-menu h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #010101
+}
+ul {
   list-style: none
 }
 @media (min-width:472px) {
-  header ul li {
+  ul li {
     display: inline-block;
     margin-right: 25px
   }
-  header ul li .active::after {
+  ul li .active::after {
     content: "";
     width: 5px;
     height: 5px;
@@ -157,20 +232,20 @@ header ul {
   }
 }
 @media (max-width:471px) {
-  header ul li {
+  ul li {
     display: block;
     margin-top: 15px
   }
-}
-header ul li .fa-solid {
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color .6s ease;
-  -o-transition: color .6s ease;
-  transition: color .6s ease
-}
-header ul li .fa-solid:hover {
-  color: #626dfc
+  ul li .fa-solid {
+    cursor: pointer;
+    color: #000;
+    -webkit-transition: color .6s ease;
+    -o-transition: color .6s ease;
+    transition: color .6s ease
+  }
+  ul li .fa-solid:hover {
+    color: #626dfc
+  }
 }
 @media (min-width:472px) {
   .main {
