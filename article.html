@@ -61,25 +61,28 @@
    </div>
 
    <div class="comments">
-     <h3><span>1</span> Comment</h3>
-     <div class="comment">
-      <div class="img-holder"></div>
-      <div>
-        <span class="name">John Doe</span>
-        <span class="time">2 hours ago</span>
-        <span class="reply">reply</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi sem, interdum id interdum sit amet, pellentesque non quam. Mauris metus augue, facilisis a vehicula id, rutrum vitae velit. Aliquam et odio et enim condimentum pellentesque. Vestibulum sollicitudin ex ligula, sed posuere risus sagittis sit amet. Maecenas ultrices nec nisl a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi sem, interdum id interdum sit amet, pellentesque non quam. Mauris metus augue, facilisis a vehicula id, rutrum vitae velit. Aliquam et odio et enim condimentum pellentesque. Vestibulum sollicitudin ex ligula, sed posuere risus sagittis sit amet. Maecenas ultrices nec nisl a placerat.</p>
-      </div>
+     <h3><span class="count-comm">1</span> Comment</h3>
+     <div id="comments">
+       <div class="comment" id="block-1">
+        <div class="img-holder"></div>
+        <div>
+          <span class="name">John Doe</span>
+          <span class="time">2 hours ago</span>
+          <span class="delete" onclick="delComm(1)">Delete</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi sem, interdum id interdum sit amet, pellentesque non quam. Mauris metus augue, facilisis a vehicula id, rutrum vitae velit. Aliquam et odio et enim condimentum pellentesque. <b>Comments are works, try it please</b> Maecenas ultrices nec nisl a placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi sem, interdum id interdum sit amet, pellentesque non quam. Mauris metus augue, facilisis a vehicula id, rutrum vitae velit. Aliquam et odio et enim condimentum pellentesque. Vestibulum sollicitudin ex ligula, sed posuere risus sagittis sit amet. Maecenas ultrices nec nisl a placerat.</p>
+        </div>
+       </div>
      </div>
    </div>
 
    <div class="comment-form">
      <h3>Share your thoughts</h3>
-     <form>
+     <form id="comments-form">
        <input type="text" name="name" placeholder="Name">
-       <input type="text" name="email" placeholder="Email">
-       <textarea placeholder="Let us know what you have to say..."></textarea>
-       <button class="post-comment">Post Comment</button>
+       <input type="text" placeholder="Email">
+       <textarea name="comment" placeholder="Let us know what you have to say..."></textarea>
+       <div id="error"></div>
+       <button class="post-comment" type="button">Post Comment</button>
      </form>
    </div>
  </div>
@@ -117,5 +120,6 @@
   </div>
   </footer>
   <p class="rights">Copyright &copy; 2019 Cinc Theme. All rights reserved.</p>
+  <script src="js/article.js"></script>
 </body>
 </html>

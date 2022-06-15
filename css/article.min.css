@@ -209,6 +209,9 @@
   bottom: -5px;
   height: 2px
 }
+.article .comments #no-com {
+  margin-top: 10px
+}
 .article .comments .comment {
   margin-top: 50px;
   display: -webkit-box;
@@ -238,7 +241,7 @@
   content: "|";
   margin: 0 10px
 }
-.article .comments .comment .reply {
+.article .comments .comment .delete {
   font-size: 14px;
   font-weight: 400;
   color: #626dfc;
@@ -247,7 +250,7 @@
   transition: color .6s ease;
   cursor: pointer
 }
-.article .comments .comment .reply:hover {
+.article .comments .comment .delete:hover {
   color: #000
 }
 .article .comments .comment p {
@@ -297,6 +300,9 @@
   width: 96%;
   resize: none;
   height: 260px
+}
+.article .comment-form form #error {
+  color: #e31e24
 }
 .article .comment-form form .post-comment {
   float: right;
