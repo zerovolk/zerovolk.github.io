@@ -69,8 +69,15 @@
   background: #626dfc;
   color: #fcfcfc
 }
-.contacts > div {
-  margin-top: 100px
+@media (min-width:472px) {
+  .contacts > div {
+    margin-top: 100px
+  }
+}
+@media (max-width:471px) {
+  .contacts > div {
+    margin-top: 20px
+  }
 }
 .contacts > div h1 {
   text-transform: uppercase;

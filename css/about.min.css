@@ -48,8 +48,15 @@
   bottom: 3px;
   left: 0
 }
-.about > div {
-  margin-top: 100px
+@media (min-width:472px) {
+  .about > div {
+    margin-top: 100px
+  }
+}
+@media (max-width:471px) {
+  .about > div {
+    margin-top: 20px
+  }
 }
 .about > div h1 {
   text-transform: uppercase;
@@ -73,5 +80,6 @@
 }
 .about > div ul li {
   font-size: 16px;
-  font-weight: 300
+  font-weight: 300;
+  display: block
 }

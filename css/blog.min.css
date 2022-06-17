@@ -48,8 +48,15 @@
   bottom: 3px;
   left: 0
 }
-.blog > div {
-  margin-top: 100px
+@media (min-width:472px) {
+  .blog > div {
+    margin-top: 100px
+  }
+}
+@media (max-width:471px) {
+  .blog > div {
+    margin-top: 20px
+  }
 }
 .blog > div h1 {
   text-transform: uppercase;

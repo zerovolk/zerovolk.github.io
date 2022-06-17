@@ -110,7 +110,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   background-color: #fff;
-  color: #999
+  color: #999;
+  height: auto
 }
 a {
   text-decoration: none;
@@ -166,7 +167,9 @@ header .logo {
     color: #000;
     -webkit-transition: color .6s ease;
     -o-transition: color .6s ease;
-    transition: color .6s ease
+    transition: color .6s ease;
+    padding: 30px;
+    padding-bottom: 20px
   }
   header #show-menu:hover {
     color: #626dfc
@@ -176,10 +179,21 @@ header .logo {
   .fixed {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: -1px;
     left: 0;
-    border-bottom: 2px solid silver;
-    background: #fff
+    border-bottom: 1px solid silver;
+    background: #fff;
+    z-index: 10;
+    -webkit-transition: -webkit-transform .1s linear;
+    transition: -webkit-transform .1s linear;
+    -o-transition: transform .1s linear;
+    transition: transform .1s linear;
+    transition: transform .1s linear,-webkit-transform .1s linear
+  }
+  .hide {
+    -webkit-transform: translateY(-105px);
+    -ms-transform: translateY(-105px);
+    transform: translateY(-105px)
   }
 }
 #hidden-menu {
@@ -187,28 +201,33 @@ header .logo {
   position: fixed;
   top: 0;
   right: -200px;
-  height: 100vh;
+  height: 44vh;
   z-index: 10;
   background: #fff;
-  text-align: center
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-left: 1px solid silver;
+  border-bottom: 1px solid silver;
+  font-size: 20px
 }
 #hidden-menu .close {
   font-size: 40px;
   float: right;
-  margin-right: 20px;
   font-weight: 700;
   -webkit-transition: color .6s ease;
   -o-transition: color .6s ease;
   transition: color .6s ease;
   cursor: pointer;
-  color: #010101
+  color: #010101;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px
 }
 #hidden-menu .close:hover {
   color: #626dfc
 }
 #hidden-menu h2 {
-  margin-top: 100px;
-  margin-bottom: 20px;
+  margin-top: 70px;
   color: #010101
 }
 ul {
@@ -229,6 +248,16 @@ ul {
     position: relative;
     top: 12px;
     right: 50%
+  }
+  ul li .fa-solid {
+    cursor: pointer;
+    color: #000;
+    -webkit-transition: color .6s ease;
+    -o-transition: color .6s ease;
+    transition: color .6s ease
+  }
+  ul li .fa-solid:hover {
+    color: #626dfc
   }
 }
 @media (max-width:471px) {
